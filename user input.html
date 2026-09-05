@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User input</title>
+</head>
+<body style="background-color: black;">
+
+	<img src="pictures\c++.webp" height="70" width="70"  style="display: block; margin: auto;">
+
+	<h1 style="color: darkorange; background-color: beige; font-size: 40px;">C++ (User Input)</h1><br>
+
+	<details>
+		
+
+		<summary style="color: ghostwhite; font-size: 20px;">Contents</summary><br>
+
+		<p style="color: white; font-size: 22px;">>User Input</p>
+		<a href="data types.html" style="color: orange; font-size: 20px;">Data Types</a><br><br>
+		<a href="if else.html" style="color: orange; font-size: 20px;">If Else</a><br><br>
+		<a href="loops.html" style="color: orange; font-size: 20px;">Loops</a><br><br>
+		<a href="homepage.html" style="color: orange; font-size: 20px;">Back Home🏠</a><br><br>
+
+
+	</details><br>
+
+	<h1 style="color: darkgreen; background-color: beige; font-size: 30px;">Basic Input Using</h1>
+	<p style="color: white; font-size: 18px;">In C++ taking user input is primarily handled in the <span style="color: darkorange;">&#60iostream&#62</span> library, which provides the standard input stream object <span style="color: darkorange;">cin</span>.<br> Depending on the type of data (e.g. integer value, single word, or full sentence) either the <span style="color: darkorange;">extraction operator (>>)</span> or the <br> <span style="color: darkorange;"> getline()</span> funtion is used.</p>
+	<br>
+
+	<p style="color: white; font-size: 18px;">The <span style="color: darkorange;">extraction operator (>>)</span> is ideal for reading numbers, single characters, or single words. It automatically converts <br> the input to match the variable type.</p>
+	<br>
+
+	<pre style="color: purple;font-size: 20px;">
+
+		<u>C++ Code 💻</u>
+
+		#include&#60iostream&#62
+		using namespace std;
+
+		int main()
+		{
+		   int age;
+
+		   cout<<"Enter your age: ";
+		   cin>>age;
+		   cout<<"Your age is: "<&#60age;
+
+		   return 0;
+		}
+		
+	</pre>
+	<br>
+
+	<figure>
+		<img src="pictures\terminal2.png" style="display: block; margin: auto;">
+		<figcaption style="color: darkorange; text-align: center;">Terminal Output</figcaption>
+	</figure>
+	<br>
+
+	<p style="color: white; font-size: 18px;">Check how the age input given by the user, gets stored in the variable <span style="color: darkorange;">"age"</span>. Remember to initialize the variable <br> type (here it is interger <span style="color: darkorange;">(int)</span>).</p>
+	<br>
+
+	<h1 style="color: darkgreen; background-color: beige; font-size: 30px;">Chaining Multiple Inputs</h1>
+
+	<p style="color: white; font-size: 18px;">Multiple inputs can also be chained by using the <span style="color: darkorange;">>> </span> operator. The user can seperate inputs with spaces ot tab.</p>
+	<br>
+
+	<pre style="color: purple;font-size: 20px;">
+		<u>C++ Code💻</u>
+
+		#include&#60iostream&#62
+		using namespace std;
+
+		int main()
+		{
+		   int len, breadth, area;
+
+		   cout<<"Enter the length and breadth of the rectangle: ";
+		   cin>>len>>breadth;
+
+		   area = len*breadth;
+
+		   cout<<"The area of the rectangle is: "<&#60area;
+
+		   return 0;
+		}
+		
+	</pre>
+	<br>
+
+	<figure>
+		
+		<img src="pictures\terminal3.png" style="display: block; margin: auto;">
+		<figcaption style="color: darkorange; text-align: center;">Terminal Output</figcaption>
+
+	</figure>
+	<br>
+
+	<p style="color: white; font-size: 18px;">Take a look at how the <span style="color: darkorange;">len</span> and <span style="color: darkorange;">breadth</span> variables are chained together.</p>
+	<br>
+
+	<h1 style="color: darkgreen; background-color: beige; font-size: 30px;">Getting a Single Character</h1>
+
+	<p style="color: white; font-size: 18px;">To take a single character as an input we use the <span style="color: darkorange;"> <abbr title="Character">char</abbr> </span> type variable.</p>
+	<br>
+
+	<pre style="color: purple;font-size: 20px;">
+		
+		<u>C++ Code💻</u>
+
+		#include&#60iostream&#62
+		using namespace std;
+
+		int main()
+		{
+		   char choice;
+
+		   cout<<"Enter your choice (Y/N): ";
+		   cin>>choice;
+
+		   cout<<"Your choice is: "<&#60choice;
+
+		   return 0;
+		}
+
+	</pre>
+	<br>
+
+	<figure>
+		
+		<img src="pictures\terminal4.png" style="display: block; margin: auto;">
+		<figcaption style="color: darkorange; text-align: center;">Terminal Output</figcaption>
+
+	</figure>
+	<br>
+
+	<p style="color: white; font-size: 18px;">Notice something we used <span span style="color: darkorange;">char</span> variable this time, instead of <span span style="color: darkorange;">int</span> which takes a single character as the input. <br>Another useful variable type is <span span style="color: darkorange;">float</span> which takes decimal numbers as input <span span style="color: darkorange;">(e.g. 10.20, 80.99)</span>. </p>
+	<hr>
+
+	<p style="text-align: center; font-size: 20px;"><a href="intro.html">Previous Page</a> </p>
+	<p style="text-align: center; font-size: 20px;"><a href="data types.html">Start next chapter</a> </p>
+
+</body>
+</html>

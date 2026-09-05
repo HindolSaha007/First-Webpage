@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>If else</title>
+
+	<style>
+
+		h1 {color: darkgreen; background-color: beige; font-size: 30px;}
+		pre {color: purple; font-size: 20px;}
+		p {color: white; font-size: 18px;}
+
+	</style>
+</head>
+<body style="background-color: black;">
+
+	<img src="pictures\c++.webp" height="70" width="70"  style="display: block; margin: auto;">
+
+	<article>
+		
+		<section>
+			
+			<h1 style="color: darkorange; background-color: beige; font-size: 40px;">C++ (if-else statement)</h1><br>
+
+			<details>
+				
+				<summary style="color: ghostwhite; font-size: 20px;">Contents</summary><br>
+
+				<a href=" user input.html" style="color: orange; font-size: 20px;">User Input</a><br><br>
+				<a href="data types.html" style="color: orange; font-size: 20px;">Data Types</a><br>
+				<p style="color: white; font-size: 22px;">>If Else</p>
+				<a href="loops.html" style="color: orange; font-size: 20px;">Loops</a><br><br>
+				<a href="homepage.html" style="color: orange; font-size: 20px;">Back Home🏠</a><br><br>
+
+			</details>
+
+		</section><br>
+
+		<section>
+			
+			<h1>What is if-else statement?</h1>
+
+			<p>An <span style="color: darkorange; font-size: 18px;">if-else statement</span> in C++ is a conditional statement used to control the flow of a program based on <br> specific conditions. It allows the application to make decisions by executing one block of code if a <br> condition is true, and a different block if it is false.</p>
+
+		</section>
+		<br>
+
+		<section>
+			
+			<h1>Basic if-else Syntax</h1>
+
+			<pre>
+				<u>C++ Code 💻</u>
+
+				if (condition)
+				{
+				   ...
+				} <span style="color: darkgray; font-size: 18px;">    // this block executes if the condition is true</span>
+
+				else
+				{
+				   ...
+				} <span style="color: darkgray; font-size: 18px;">    // this block executes if the condition is false</span>
+
+			</pre>
+			<br>
+
+			<p>For example:</p>
+			<br>
+
+			<pre>
+				<u>C++ Code 💻</u>
+
+				#include&#60iostream&#62
+				using namespace std;
+
+				int main()
+				{
+				   int age;
+
+				   cout<<"Enter your age:";
+				   cin>>age;
+
+				   if (age >= 18)
+				   {
+				   	   cout<<"You are an adult";
+				   }
+
+				   else
+				   {
+				   	   cout<<"You are not an adult";
+				   }
+
+				   return 0;
+				}
+			</pre>
+			<br>
+
+			<figure>
+				
+				<img src="pictures\terminal5.png" style="display: block; margin: auto;">
+				<figcaption style="color: darkorange; text-align: center;">When the user input is 12</figcaption>
+
+			</figure>
+			<br>
+
+			<figure>
+				
+				<img src="pictures\terminal6.png" style="display: block; margin: auto;">
+				<figcaption style="color: darkorange; text-align: center;">When user input is 19</figcaption>
+
+			</figure>
+
+		</section>
+		<br>
+
+		<section>
+			
+			<h1>3.The if-else &nbspif-else Ladder</h1>
+
+			<p>When you need to test multiple conditions in sequence, you can chain <span style="color: darkorange; font-size: 18px;">else if</span> blocks. The program checks <br> them from top to bottom and runs the block for the first true condition it finds. <br>For example </p>
+			<br>
+
+			<pre>
+				
+				<u>C++ Code 💻</u>
+
+
+				#include&#60iostream&#62
+				using namespace std;
+
+				int main()
+				{
+				   int score = 85;
+
+				   if (score >= 90)
+				   {
+				   	   cout<<"Grade A";
+				   }
+
+				   else if (score >= 80)
+				   {
+				   	   cout<<"Grade B";
+				   }
+
+				   else if (score >= 70)
+				   {
+				   	   cout<<"Grade C";
+				   }
+
+				   else
+				   {
+				   	   cout<<"Grade F";
+				   }
+
+				   return 0;
+				}
+
+			</pre>
+			<br>
+
+			<figure>
+				
+				<img src="pictures\terminal7.png" style="display: block; margin: auto;">
+				<figcaption style="color: darkorange; text-align: center;">Terminal Output</figcaption>
+
+			</figure>
+
+		</section>
+
+
+	</article>
+	<br><hr>
+
+	<p style="text-align: center; font-size: 20px;"><a href="data types.html">Previous Page</a> </p>
+	<p style="text-align: center; font-size: 20px;"><a href="loops.html">Start next chapter</a> </p>
+
+</body>
+</html>

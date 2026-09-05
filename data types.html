@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Data Types</title>
+
+	<style>
+		
+		h1 {color: darkgreen; background-color: beige; font-size: 30px;}
+		p {color: white; font-size: 18px;}
+		pre {color: purple; font-size: 20px;}
+
+	</style>
+
+</head>
+<body style="background-color: black;">
+
+	<img src="pictures\c++.webp" height="70" width="70"  style="display: block; margin: auto;">
+
+	<h1 style="color: darkorange; background-color: beige; font-size: 40px;">C++ (Data Types)</h1><br>
+
+	<details>
+		
+
+		<summary style="color: ghostwhite; font-size: 20px;">Contents</summary><br>
+
+		<a href=" user input.html" style="color: orange; font-size: 20px;">User Input</a><br>
+		<p style="color: white; font-size: 22px;">>Data Types</p>
+		<a href="if else.html" style="color: orange; font-size: 20px;">If Else</a><br><br>
+		<a href="loops.html" style="color: orange; font-size: 20px;">Loops</a><br><br>
+		<a href="homepage.html" style="color: orange; font-size: 20px;">Back Home🏠</a><br><br>
+
+
+	</details><br>
+
+	<h1>What is Data Types</h1>
+
+	<p>In C++ data types <span style="color: darkorange;">specify the type and size of a variable can hold</span>. Every variable must be <br>declared with a specific data type so the compiler knows how much memory to allocate <br>and how to interpret its value. <br>C++ data types are broadly classified into three main categories: <br> <span style="color: darkorange;"> <b>Fundamental (Built-in), Derived </b> </span> and <span style="color: darkorange;"> <b>User-Defined</b> </span>. </p>
+	<br>
+
+	<h1>1.Fundamental Data Types (Built-in)</h1>
+
+	<table border="1" cellspacing="4" style="color: beige;">
+
+		<tr>
+			
+			<th style="color: darkorange;"> <b>Data Type Group</b> </th>
+			<th style="color: darkorange;"> <b>Keyword</b> </th>
+			<th style="color: darkorange;"> <b>Typical Size</b> </th>
+			<th style="color: darkorange;"> <b>Description</b> </th>
+			<th style="color: darkorange;"> <b>Example</b> </th>
+
+		</tr>
+
+		<tr>
+			
+			<td> <b>Integer</b> </td>
+			<td>int</td>
+			<td>4 bytes</td>
+			<td>Stores whole numbers without decimals.</td>
+			<td>int age = 25;</td>
+
+		</tr>
+
+		<tr>
+			
+			<td> <b> Floating-Point </b> </td>
+			<td>float</td>
+			<td>4 bytes</td>
+			<td>Stores fractional numbers (6-7 decimal digits precision).</td>
+			<td>float pi = 3.14;</td>
+
+		</tr>
+
+		<tr>
+			
+			<td> <b>Double Floating-Point</b> </td>
+			<td>double</td>
+			<td>8 bytes</td>
+			<td>High-precision decimal numbers (15 decimal digit).</td>
+			<td>double balance = 945.12;</td>
+
+		</tr>
+
+		<tr>
+			
+			<td> <b>Character</b> </td>
+			<td>char</td>
+			<td>1 byte</td>
+			<td>Stores a single character enclosed in single quotes.</td>
+			<td>char grade 'A';</td>
+
+		</tr>
+
+		<tr>
+			
+			<td> <b>Boolean</b> </td>
+			<td>bool</td>
+			<td>1 byte</td>
+			<td>Stores logical states: true (1) or false(0).</td>
+			<td>bool isOpen = true;</td>
+
+		</tr>
+
+		<tr>
+			
+			<td> <b>Valueless</b> </td>;
+			<td>void</td>
+			<td>N/A</td>
+			<td>Represents the absence of a value; used in funtion returns.</td>
+			<td>void My_Function()</td>
+
+		</tr>
+		
+	</table>
+	<p>Note that the exact memory sizes can vary depending on the system architecture and compiler. <br> Sizes can be check using the <span style="color: darkorange;">sizeof()</span> operator. </p>
+	<br>
+
+	<h1>2.Derived Data Types</h1>
+
+	<ul style="color: white; font-size: 18px;">
+		
+		<li> <b style="color: darkorange; font-size: 18px;">Arrays: </b> A sequential collection of elements of the exact same data type.</li>
+
+		<pre>
+			<u>C++ Code 💻</u>
+
+			int numbers[5] = {1, 2, 3, 4, 5}; 
+
+		</pre>
+
+		<li> <b style="color: darkorange;">Pointers: </b> Variables that store the memory addresses of another variable instead of a value. </li>
+
+		<pre>
+			<u>C++ Code 💻</u>
+
+			int value = 10;
+			int *ptr = &#38value;  <span style="color: darkgray; font-size: 18;">// ptr stores the address of the value</span>
+
+		</pre>
+
+		<li> <b style="color: darkorange;">Functions:</b> Blocks of code with specific parameter types and return types.</li>
+
+		<pre>
+			<u>C++ Code 💻</u>
+
+			int if_eligible()
+			{
+			   if (age >= 18)
+			   {
+			   	return 1;
+			   }
+
+			   else
+			   {
+			       return 0;
+			   }
+			}
+
+		</pre>
+
+	</ul>
+	<br>
+
+	<h1>3.User-Defined Data Types</h1>
+
+	<p>These are custom structures that programmers create to handle complex data representations.</p>
+	<br>
+
+	<ul style="color: white; font-size: 18px;">
+		
+		<li> <b style="color: darkorange;">Structure (struct): </b> Groups related variables of different data types under a single name.</li>
+
+		<pre>
+			<u>C++ Code 💻</u>
+
+			struct Student
+			{
+			   int class;
+			   int roll.no;
+			   char grade;
+			};
+		</pre>
+
+		<li> <b style="color: darkorange;">Class (class): </b> The core of <abbr title="Object Oriented Programming">OOP</abbr>. It binds data (variables) and methods (functions) into a single unit.</li>
+		<br>
+
+		<li> <b style="color: darkorange;">Union (union):</b> Similar to structures, but all members share the exact same memory location to save space.</li>
+
+
+	</ul>
+	<br><hr>
+
+	<p style="text-align: center; font-size: 20px;"><a href="user input.html">Previous Page</a> </p>
+	<p style="text-align: center; font-size: 20px;"><a href="if else.html">Start next chapter</a> </p>
+
+
+
+
+
+</body>
+</html>

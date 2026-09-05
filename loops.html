@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loops</title>
+
+	<style>
+		
+		p {color: white; font-size: 18px}
+		h1 {color: darkgreen; background-color: beige; font-size: 30px;}
+		pre {color: purple; font-size: 20px;}
+
+	</style>
+
+</head>
+<body style="background-color: black;">
+
+	<img src="pictures\c++.webp" height="70" width="70"  style="display: block; margin: auto;">
+	<h1 style="color: darkorange; background-color: beige; font-size: 40px;">C++ (Loops)</h1><br>
+
+	<details>
+				
+				<summary style="color: ghostwhite; font-size: 20px;">Contents</summary><br>
+
+				<a href=" user input.html" style="color: orange; font-size: 20px;">User Input</a><br><br>
+				<a href="data types.html" style="color: orange; font-size: 20px;">Data Types</a><br><br>
+				<a href="if else.html" style="color: orange; font-size: 20px;">If Else</a><br>
+				<p style="color: white; font-size: 22px;">>Loops</p>
+				<a href="homepage.html" style="color: orange; font-size: 20px;">Back Home🏠</a><br><br>
+
+			</details>
+
+	<article>
+		
+		<section>
+			
+			<h1>What is Loops?</h1>
+
+			<p>Loops in C++ are control flow structures that allow you to repeatedly execute a block of code. <br>Instead of writing the same line of code multiple times, loops automate the process based on conditions. <br><br>C++ provides four main types of loops, along with two essential control statements to modify their <br> behaviour. Here we are going to learn only two <span style="color: darkorange; font-size: 18px;"> (for and while) </span> loop.</p>
+
+		</section>
+		<br>
+
+		<section>
+			
+			<h1>1.The <span style="color: darkorange; font-size: 32px;">for</span> Loop (Counter-controlled</h1>
+
+			<p>Use a for loop when you know exactly how many times you want to execute a block of code. <br>It groups initialization, condition testing, and updating into single line. </p>
+			<br>
+
+			<pre>
+				
+				<u>C++ Code💻</u>
+
+				#include&#60iostream&#62
+				using namespace std;
+
+				int main()
+				{
+				   for (int i=0; i<5; i++)
+				   {
+				   	cout<&#60i<<" ";
+				   }
+
+				   return 0;
+				}
+
+			</pre>
+			<br>
+
+			<figure>
+				
+				<img src="pictures\terminal8.png" style="display: block; margin: auto;">
+				<figcaption style="color: darkorange; text-align: center;">Terminal Output</figcaption>
+
+			</figure>
+
+		</section>
+		<br>
+
+		<section>
+			
+			<h1>The <span style="color: darkorange; font-size: 32px;">while </span> Loop (Entry-Controlled) </h1>
+			<p>Use a while loop when the number of repetitions is not known in advance. It checks <br> the condition before entering the loop. If the condition starts as false, the body never runs.</p>
+			<br>
+
+			<pre>
+				
+				<u>C++ Code 💻</u>
+
+				#include&#60iostream&#62
+				using namespace std;
+
+				int main()
+				{
+				   int i = 0;
+
+				   while (i < 5)
+				   {
+				   	   cout<&#60i<<" ";
+				   	   i++;
+				   }
+
+				   return 0;
+				}
+
+			</pre>
+			<br>
+
+			<figure>
+				
+				<img src="pictures\terminal9.png" style="display: block; margin: auto;">
+				<figcaption style="color: darkorange; text-align: center;">Terminal Output</figcaption>
+
+			</figure>
+			<br>
+
+			<p>Note how the <span style="color: darkorange; font-size: 18px;">while</span> loop actually runs until the given condition gets false. </p>
+
+		</section>
+
+	</article>
+	<br><hr>
+
+	<p style="text-align: center; font-size: 20px;"><a href="if else.html">Previous Page</a> </p>
+	<p style="text-align: center; font-size: 20px;"><a href="homepage.html">Back to Home</a> </p>
+
+</body>
+</html>
